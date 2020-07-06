@@ -1,0 +1,57 @@
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+body {
+	font-family: $roboto;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	line-height: 24px;
+	overflow-x: hidden;
+	color: $textcolor;
+}
+
+html{
+	box-sizing: border-box;
+}
+
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+
+a{
+	display: inline-block;
+	color: $textcolor;
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+		color: inherit;
+	}
+
+}
+
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}

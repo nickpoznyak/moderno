@@ -1,5 +1,56 @@
 @import 'config';
+@import 'global';
 
 // CUSTOM USER STYLES & IMPORTS
 
+.header__top-inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90px;
+}
 
+.header__text{
+	margin-left: auto;
+	margin-right: 50px;
+	span{
+		color: $accent;
+	}
+}
+
+.header__btn{
+	padding: 4px;
+	width: 72px;
+	border-radius: 4px;
+	font-size: 12px;
+	text-align: center;
+	color: #ffffff;
+	&-login{
+		background-color: $green;
+	}
+	&-register{
+		background-color: $accent;
+		margin-left: 7px;
+	}
+}
+
+.header__menu{
+	background-color: $bgcolor;
+}
+.menu{
+	display: flex;
+	height: 60px;
+	align-items: center;
+	a{
+		color: #ffffff;
+		font-size: 14px;
+	}
+	&__list{
+		li{
+			display: inline-block;
+			& + li{
+				margin-left: 30px;
+			}
+		}
+	}
+}
