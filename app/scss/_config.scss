@@ -19,6 +19,9 @@ $gutter: $grid-gutter-width;
 @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'; // Bootstrap Breakpoints mixin
 // @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
 // @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
+@import 'node_modules/slick-carousel/slick/slick.scss'; // Slick Slider
+// @import 'node_modules/slick-carousel/slick/slick-theme.scss'; // Slick Slider
+@import 'app/libs/rateyo/jquery.rateyo.min'; // Rate Yo Rating Plugin
 
 // FONTS LOAD SECTION
 

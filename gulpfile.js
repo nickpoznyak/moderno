@@ -12,6 +12,8 @@ let paths = {
 		src: [
 			'node_modules/jquery/dist/jquery.min.js',
 			'node_modules/mixitup/dist/mixitup.min.js',
+			'node_modules/slick-carousel/slick/slick.min.js',
+			'app/libs/rateyo/jquery.rateyo.min.js',
 			baseDir + '/js/app.js' // app.js. Always at the end
 		],
 		dest: baseDir + '/js',
