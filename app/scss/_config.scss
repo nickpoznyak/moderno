@@ -5,6 +5,8 @@ $fontsize: 15px; // Body Font Size
 $textcolor: #546e7a; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 $roboto: Roboto, sans-serif; // Roboto Font Family
+$raleway: Raleway, sans-serif; // Raleway Font Family
+$lato: Lato, sans-serif; // Lato Font Family
 $green: #8bc34a;
 $bgcolor: #263238;
 $grey: #f4f6f5;
@@ -22,6 +24,8 @@ $gutter: $grid-gutter-width;
 @import 'node_modules/slick-carousel/slick/slick.scss'; // Slick Slider
 // @import 'node_modules/slick-carousel/slick/slick-theme.scss'; // Slick Slider
 @import 'app/libs/rateyo/jquery.rateyo.min'; // Rate Yo Rating Plugin
+
+@import 'icomoon.scss';
 
 // FONTS LOAD SECTION
 
@@ -41,3 +45,5 @@ $gutter: $grid-gutter-width;
 // @include font('Roboto', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2');
 @include font('Roboto', normal, 500, '../fonts/roboto-medium-webfont.woff2');
 // @include font('Roboto', italic, 500, '../fonts/roboto-mediumitalic-webfont.woff2');
+@include font('Raleway', normal, 700, '../fonts/Raleway-Bold.woff2');
+@include font('Lato', normal, 600, '../fonts/Lato-Semibold.woff2');
