@@ -23,10 +23,12 @@ body {
 	line-height: 24px;
 	overflow-x: hidden;
 	color: $textcolor;
+	height: 100%;
 }
 
 html{
 	box-sizing: border-box;
+	height: 100%;
 }
 
 *, *::before, *::after{
@@ -68,6 +70,22 @@ ul, li{
 	}
 }
 
+.page-content{
+	background-color: $grey;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
 .title{
 	text-align: center;
 	color: $bgcolor;
@@ -80,4 +98,33 @@ ul, li{
 .rate-star{
 	display: inline-block;
 	margin-right: 13px;
+}
+
+.breadcrumbs{
+	&__inner{
+		padding: 45px 0px 40px;
+	}
+	&__list{
+		li{
+			display: inline-block;
+			position: relative;
+			& + li{
+				padding-left: 24px;
+				&::before{
+					content: "-";
+					position: absolute;
+					left: 8px;
+					color: $green;
+				}
+			}
+			&:last-child{
+				a, span{
+					color: $bgcolor;
+				}
+			}
+		}
+		a{
+			color: #b0bec5;
+		}
+	}
 }
