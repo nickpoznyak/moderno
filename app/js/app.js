@@ -38,13 +38,19 @@ document.addEventListener("DOMContentLoaded", function() {
 		slidesToScroll: 4
 	});
 	
+	$('.menu__btn').on('click', function(){
+		$('.menu__list').slideToggle();
+	});
+
+	$('.header__btn-menu').on('click', function(){
+		$('.header__box').toggleClass('active');
+	});
 
 	var containerEl = document.querySelector(".products__inner-box");
 	var mixer;
 	if (containerEl) {
 		mixer = mixitup(containerEl);
 	};
-
 
 
 });

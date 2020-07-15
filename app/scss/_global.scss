@@ -24,6 +24,7 @@ body {
 	overflow-x: hidden;
 	color: $textcolor;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 html{
@@ -126,5 +127,17 @@ ul, li{
 		a{
 			color: #b0bec5;
 		}
+	}
+}
+.angle-right{
+	position: relative;
+	padding-left: 15px;
+	&::before{
+		content: "\f105";
+		font-family: 'icomoon';
+		position: absolute;
+		left: 0;
+		color: $green;
+		font-size: 14px;
 	}
 }
