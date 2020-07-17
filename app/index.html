@@ -63,7 +63,7 @@
 										<span>5</span>
 									</a>
 									<div class="circle__menu message__menu">
-										<a class="circle__item icon-envelope-o icons-color"  href="#">
+										<a class="circle__item icon-envelope-o icons-color" href="#">
 											<img class="circle__images" src="images/dest/content/message.jpg" alt="">
 											<div class="circle__info">
 												<div class="circle__info-name">Kazi Fahim</div>
@@ -71,7 +71,7 @@
 												<div class="circle__info-data">01 Dec, 2016</div>
 											</div>
 										</a>
-										<a class="circle__item icon-envelope-o"  href="#">
+										<a class="circle__item icon-envelope-o" href="#">
 											<img class="circle__images" src="images/dest/content/message.jpg" alt="">
 											<div class="circle__info">
 												<div class="circle__info-name">Kazi Fahim</div>
@@ -79,7 +79,7 @@
 												<div class="circle__info-data">01 Dec, 2016</div>
 											</div>
 										</a>
-										<a class="circle__item icon-mail-reply"  href="#">
+										<a class="circle__item icon-mail-reply" href="#">
 											<img class="circle__images" src="images/dest/content/message.jpg" alt="">
 											<div class="circle__info">
 												<div class="circle__info-name">Kazi Fahim</div>
@@ -145,7 +145,8 @@
 										</ul>
 									</div>
 								</div>
-								<a class="header__btn header__btn-login header__btn-login--on" href="#">Login</a>
+								<a data-fancybox class="header__btn header__btn-login header__btn-login--on" data-src="#modal"
+									href="javascript:;">Login</a>
 								<a class="header__btn header__btn-logout header__btn-login--off" href="#">Logout</a>
 								<a class="header__btn header__btn-register header__btn-login--on" href="#">Register</a>
 							</div>
@@ -1115,6 +1116,26 @@
 			</div>
 		</footer>
 	</div>
+
+	<div id="modal">
+		<div class="login__wrapper">
+			<div class="login__title">
+				Login
+			</div>
+			<form>
+				<label class="login__label-name">
+					<input type="text" placeholder="Name" required>
+				</label>
+				<label class="login__label-pass">
+					<input type="text" placeholder="Password" required>
+				</label>
+				<button type="submit">Submit</button>
+				<a class="create-acc" href="#">Create An Account</a>
+				<a class="lost-pass" href="#">Lost Password?</a>
+			</form>
+		</div>
+	</div>
+
 	<script src="js/app.min.js"></script>
 
 </body>

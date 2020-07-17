@@ -15,6 +15,7 @@ let paths = {
 			'node_modules/slick-carousel/slick/slick.min.js',
 			'app/libs/rateyo/jquery.rateyo.min.js',
 			'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
+			'app/libs/fancybox/dist/jquery.fancybox.min.js',
 			baseDir + '/js/app.js' // app.js. Always at the end
 		],
 		dest: baseDir + '/js',
