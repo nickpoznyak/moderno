@@ -1,0 +1,149 @@
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+body {
+	font-family: $roboto;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	line-height: 24px;
+	overflow-x: hidden;
+	color: $textcolor;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+html{
+	box-sizing: border-box;
+	height: 100%;
+}
+
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+
+a{
+	display: inline-block;
+	color: $textcolor;
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+		color: inherit;
+	}
+
+}
+
+ul, li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-fluid{
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+@media (max-width:720px){
+	.container-fluid{
+		padding: 0 15px;
+	}
+}
+
+.page-content{
+	background-color: $grey;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.title{
+	text-align: center;
+	color: $bgcolor;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 60px;
+	margin-bottom: 30px;
+}
+
+.rate-star{
+	display: inline-block;
+	margin-right: 13px;
+}
+
+.breadcrumbs{
+	&__inner{
+		padding: 45px 0px 40px;
+		overflow: hidden;
+		width: 1200px;
+	}
+	&__list{
+		li{
+			display: inline-block;
+			position: relative;
+			& + li{
+				padding-left: 24px;
+				&::before{
+					content: "-";
+					position: absolute;
+					left: 8px;
+					color: $green;
+				}
+			}
+			&:last-child{
+				a, span{
+					color: $bgcolor;
+				}
+			}
+		}
+		a{
+			color: #b0bec5;
+		}
+	}
+}
+.angle-right{
+	position: relative;
+	padding-left: 15px;
+	&::before{
+		content: "\f105";
+		font-family: 'icomoon';
+		position: absolute;
+		left: 0;
+		color: $green;
+		font-size: 14px;
+	}
+}
+
+#modal{
+	display: none;
+}
