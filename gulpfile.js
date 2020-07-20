@@ -16,6 +16,7 @@ let paths = {
 			'app/libs/rateyo/jquery.rateyo.min.js',
 			'node_modules/ion-rangeslider/js/ion.rangeSlider.min.js',
 			'app/libs/fancybox/dist/jquery.fancybox.min.js',
+			'node_modules/jquery-form-styler/dist/jquery.formstyler.min.js',
 			baseDir + '/js/app.js' // app.js. Always at the end
 		],
 		dest: baseDir + '/js',

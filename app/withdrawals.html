@@ -63,7 +63,7 @@
 										<span>5</span>
 									</a>
 									<div class="circle__menu message__menu">
-										<a class="circle__item icon-envelope-o icons-color"  href="#">
+										<a class="circle__item icon-envelope-o icons-color" href="#">
 											<img class="circle__images" src="images/dest/content/message.jpg" alt="">
 											<div class="circle__info">
 												<div class="circle__info-name">Kazi Fahim</div>
@@ -71,7 +71,7 @@
 												<div class="circle__info-data">01 Dec, 2016</div>
 											</div>
 										</a>
-										<a class="circle__item icon-envelope-o"  href="#">
+										<a class="circle__item icon-envelope-o" href="#">
 											<img class="circle__images" src="images/dest/content/message.jpg" alt="">
 											<div class="circle__info">
 												<div class="circle__info-name">Kazi Fahim</div>
@@ -79,7 +79,7 @@
 												<div class="circle__info-data">01 Dec, 2016</div>
 											</div>
 										</a>
-										<a class="circle__item icon-mail-reply"  href="#">
+										<a class="circle__item icon-mail-reply" href="#">
 											<img class="circle__images" src="images/dest/content/message.jpg" alt="">
 											<div class="circle__info">
 												<div class="circle__info-name">Kazi Fahim</div>
@@ -241,91 +241,106 @@
 					<div class="breadcrumbs__inner">
 						<ul class="breadcrumbs__list">
 							<li><a href="#">Home</a></li>
-							<li><span>Settings</span></li>
+							<li><span>Withdrawals</span></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 
-			<div class="settings">
+			<section class="withdrawals">
 				<div class="container">
-					<div class="product-one__tabs settings__tabs">
-						<div class="tabs">
-							<span class="tab angle-right active" data-id="1">Personal Information</span>
-							<span class="tab angle-right" data-id="2">Profile</span>
-							<span class="tab angle-right" data-id="3">Badges</span>
-							<span class="tab angle-right" data-id="4">E-mail Settings</span>
-							<span class="tab angle-right" data-id="5">Social Network</span>
-						</div>
-						<div class="tab_content">
-							<div class="tab-item active-tab" id="1">
-								<div class="page-box">
-									<div class="page-box__title">Personal Information</div>
-									<div class="page-box__content">
-										<form>
-											<div class="settings__line">
-												<label>First Name</label>
-												<input type="text">
-											</div>
-											<div class="settings__line">
-												<label>Last Name</label>
-												<input type="text">
-											</div>
-											<div class="settings__line">
-												<label>Company Name</label>
-												<input type="text">
-											</div>
-											<div class="settings__line">
-												<label>Country</label>
-												<select>
-													<option>Select Your Country</option>
-													<option>Select Your Country</option>
-												</select>
-											</div>
-											<div class="settings__line">
-												<label>Address Line 1</label>
-												<input type="text">
-											</div>
-											<div class="settings__line">
-												<label>Address Line 2</label>
-												<input type="text">
-											</div>
-											<div class="settings__line">
-												<label>City</label>
-												<input type="text">
-											</div>
-											<div class="settings__line">
-												<label>State / Province / Region</label>
-												<input type="text">
-											</div>
-											<div class="settings__line">
-												<label>Zip / Postal Code</label>
-												<input type="text">
-											</div>
-											<div class="settings__line">
-												<label></label>
-												<button type="submit">Update</button>
-											</div>
-										</form>
-									</div>
+					<div class="withdrawals__inner">
+						<div class="withdrawals__col">
+							<div class="withdrawals__box">
+								<div class="withdrawals__title">
+									Withdrawals Earnings
+								</div>
+								<div class="withdrawals__content">
+									<form>
+										<div class="withdrawals__form-line">
+											<label>Amount to Withdraw ($2000.00 Maximum) <span>*</span></label>
+											<input type="text" placeholder="Enter the amount you want to withdraw..." required>
+										</div>
+										<div class="withdrawals__form-line">
+											<label>Choose your Withdraw Method <span>*</span></label>
+											<select>
+												<option>Credit Card 1</option>
+												<option>Credit Card 2</option>
+											</select>
+										</div>
+										<div class="withdrawals__form-line">
+											<label>Your Account Name <span>*</span></label>
+											<select>
+												<option>Account 1</option>
+												<option>Account 2</option>
+											</select>
+										</div>
+										<div class="withdrawals__form-line">
+											<label>Confirm Your Password <span>*</span></label>
+											<input type="text" placeholder="Select Your Card" required>
+										</div>
+										<button type="submit">Request Withdrawal</button>
+									</form>
 								</div>
 							</div>
-							<div class="tab-item" id="2">
-								
-							</div>
-							<div class="tab-item" id="3">
-								
-							</div>
-							<div class="tab-item" id="4">
-								
-							</div>
-							<div class="tab-item" id="5">
-								
+						</div>
+						<div class="withdrawals__col">
+							<div class="withdrawals__box">
+								<div class="withdrawals__title">
+									Withdrawal History
+								</div>
+								<div class="withdrawals__content">
+									<div class="withdrawals__content-items">
+										<div class="withdrawals__content-item">
+											<div class="withdrawals__content-date">Dec 26th, 2016</div>
+											<div class="withdrawals__content-email">Psdboss@paypal.com</div>
+											<div class="withdrawals__content-price">$200</div>
+											<div class="withdrawals__content-status">Pending</div>
+										</div>
+										<div class="withdrawals__content-item">
+											<div class="withdrawals__content-date">Dec 26th, 2016</div>
+											<div class="withdrawals__content-email">Psdboss@paypal.com</div>
+											<div class="withdrawals__content-price">$200</div>
+											<div class="withdrawals__content-status withdrawals__content-paid">Paid</div>
+										</div>
+										<div class="withdrawals__content-item">
+											<div class="withdrawals__content-date">Dec 26th, 2016</div>
+											<div class="withdrawals__content-email">Psdboss@paypal.com</div>
+											<div class="withdrawals__content-price">$200</div>
+											<div class="withdrawals__content-status withdrawals__content-paid">Paid</div>
+										</div>
+										<div class="withdrawals__content-item">
+											<div class="withdrawals__content-date">Dec 26th, 2016</div>
+											<div class="withdrawals__content-email">Psdboss@paypal.com</div>
+											<div class="withdrawals__content-price">$200</div>
+											<div class="withdrawals__content-status withdrawals__content-paid">Paid</div>
+										</div>
+										<div class="withdrawals__content-item">
+											<div class="withdrawals__content-date">Dec 26th, 2016</div>
+											<div class="withdrawals__content-email">Psdboss@paypal.com</div>
+											<div class="withdrawals__content-price">$200</div>
+											<div class="withdrawals__content-status withdrawals__content-paid">Paid</div>
+										</div>
+										<div class="withdrawals__content-item">
+											<div class="withdrawals__content-date">Dec 26th, 2016</div>
+											<div class="withdrawals__content-email">Psdboss@paypal.com</div>
+											<div class="withdrawals__content-price">$200</div>
+											<div class="withdrawals__content-status withdrawals__content-paid">Paid</div>
+										</div>
+										<div class="withdrawals__content-item">
+											<div class="withdrawals__content-date">Dec 26th, 2016</div>
+											<div class="withdrawals__content-email">Psdboss@paypal.com</div>
+											<div class="withdrawals__content-price">$200</div>
+											<div class="withdrawals__content-status withdrawals__content-paid">Paid</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+
 
 
 		</div>

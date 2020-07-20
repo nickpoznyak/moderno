@@ -104,6 +104,8 @@ ul, li{
 .breadcrumbs{
 	&__inner{
 		padding: 45px 0px 40px;
+		overflow: hidden;
+		width: 1200px;
 	}
 	&__list{
 		li{
@@ -140,4 +142,8 @@ ul, li{
 		color: $green;
 		font-size: 14px;
 	}
+}
+
+#modal{
+	display: none;
 }
